@@ -18,7 +18,7 @@ export default function Template({
         wordHighlight={frontmatter.wordHighlight}
       />
       <div>
-        <div className="px-64 text-xl text-justify">
+        <div className="px-10 sm:px-64 text-xl text-justify">
           <div dangerouslySetInnerHTML={{ __html: html }} />
           <p className="mb-5">{frontmatter.p1}</p>
           <p className="mb-5">{frontmatter.p2}</p>
@@ -30,19 +30,19 @@ export default function Template({
           <p className="mb-5">{frontmatter.p8}</p>
         </div>
       </div>
-      <div>
+      <div className="mb-10">
         <CTA />
       </div>
-      <div className="text-center pb-10">
+      <div className="text-center mt-10 pb-10">
         <a
           href="/"
-          className="bg-green-500 p-5 rounded-full uppercase font-bold"
+          className="bg-green-500 p-3 mb-10  sm:p-5 rounded-full uppercase font-bold"
         >
           {' '}
           Voltar ao site
         </a>
       </div>
-      <footer className="text-white p-3 text-center bg-gray-800">
+      <footer className="text-white p-5 text-center bg-gray-800">
         © {new Date().getFullYear()}
         {` `}
         <a href="https://www.flatcodesm.com">Flatcode</a>

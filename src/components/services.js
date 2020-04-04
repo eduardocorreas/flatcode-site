@@ -6,8 +6,8 @@ import iconConsulting from '../images/icon-consulting.svg'
 
 export default function Services() {
   return (
-    <div className="flex pl-5 pr-5 ml-5 mr-5">
-      <div className="w-1/3 bg-white rounded-lg shadow-md p-10 text-center ml-2 mr-2">
+    <div className="mb-5 sm:flex sm:pl-5 sm:pr-5 ml-5 mr-5">
+      <div className="sm:w-1/3 bg-white rounded-lg shadow-md p-10 text-center mb-2 sm:ml-2 sm:mr-2">
         <img src={iconMkt} alt="Desenvolvimento de Site" />
         <h1 className="text-xl text-gray-800 mb-5">Marketing Digital</h1>
         <p>
@@ -15,7 +15,7 @@ export default function Services() {
           empresa ou produto, gerando assim maior autoridade do seu negócio
         </p>
       </div>
-      <div className="w-1/3 bg-white rounded-lg shadow-md p-10 text-center ml-2 mr-2">
+      <div className="sm:w-1/3 bg-white rounded-lg shadow-md p-10 text-center mb-2 sm:ml-2 sm:mr-2">
         <img src={iconConsulting} alt="Desenvolvimento de Site" />
         <h1 className="text-xl text-gray-800 mb-5">Planejamento Estratégico</h1>
         <p>
@@ -23,7 +23,7 @@ export default function Services() {
           influenciam no seu negócio: identidade, público, etc.
         </p>
       </div>
-      <div className="w-1/3 bg-white-500 bg-white rounded-lg shadow-md p-10 text-center ml-2 mr-2">
+      <div className="sm:w-1/3 bg-white-500 bg-white rounded-lg shadow-md p-10 text-center mb-2 sm:ml-2 sm:mr-2">
         <img src={iconSite} alt="Desenvolvimento de Site" />
         <h1 className="text-xl text-gray-800 mb-5">Website</h1>
         <p>

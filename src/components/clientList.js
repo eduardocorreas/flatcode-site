@@ -21,10 +21,10 @@ export default function ClientList() {
     }
   `)
   return (
-    <div className="flex flex-wrap mx-auto justify-center">
+    <div className="sm:flex sm:flex-wrap mx-auto justify-center">
       {data.clients.edges.map(({ node }, i) => {
         return (
-          <div className="w-1/4 " key={i}>
+          <div className="sm:w-1/4 " key={i}>
             <Img
               fluid={node.childImageSharp.fluid}
               style={{ width: '150px' }}

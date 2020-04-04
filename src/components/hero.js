@@ -24,19 +24,21 @@ export default function Hero() {
         }}
         style={{ position: 'absolute', opacity: 0.4 }}
       />
-      <div className="pt-20 pb-10 px-24">
-        <h2 className="hero-subtitle text-white">
+      <div className="pt-10 pb-10 px-10 sm:pt-20  sm:px-24">
+        <h2 className="text-3xl sm:text-4xl text-white font-bold">
           Pronto para tornar sua marca
         </h2>
         <SplitText
           initialPose="exit"
           pose="enter"
           charPoses={charPoses}
-          className="hero-title text-white"
+          className="text-4xl sm:text-10xl text-white text-orange-600 font-bold"
         >
           inesquecível?
         </SplitText>
-        <h2 className="hero-subtitle text-white">Comece agora.</h2>
+        <h2 className="text-3xl sm:text-4xl text-white font-bold">
+          Comece agora.
+        </h2>
       </div>
       <div className="arrow-down"></div>
     </div>
