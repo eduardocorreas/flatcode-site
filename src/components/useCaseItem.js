@@ -9,7 +9,6 @@ export default function UseCaseItem({
   description,
   link,
 }) {
-  console.log(imgNode)
   return (
     <div className="sm:flex bg-gray-100 rounded-lg shadow-md p-8 sm:p-10 sm:ml-2 sm:mr-2">
       <div className="sm:w-1/3 mb-5 sm:mb-0">

@@ -7,8 +7,8 @@ export default function UseCases() {
     query {
       pojo: file(name: { eq: "pojo_jump" }) {
         childImageSharp {
-          fluid(maxWidth: 600) {
-            ...GatsbyImageSharpFluid
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
       }
