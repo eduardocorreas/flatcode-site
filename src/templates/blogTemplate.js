@@ -16,7 +16,6 @@ export default function Template({
     <Layout>
       <SEO title={frontmatter.title + ' ' + frontmatter.wordHighlight} />
       <div className=" text-white bg-gray-800">
-        <Header />
         <HeroBlog
           title={frontmatter.title}
           wordHighlight={frontmatter.wordHighlight}
@@ -46,11 +45,6 @@ export default function Template({
             Voltar ao site
           </a>
         </div>
-        <footer className="text-white p-5 text-center bg-gray-800">
-          © {new Date().getFullYear()}
-          {` `}
-          <a href="https://www.flatcodesm.com">Flatcode</a>
-        </footer>
       </div>
     </Layout>
   )
