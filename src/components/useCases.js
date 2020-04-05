@@ -17,9 +17,9 @@ export default function UseCases() {
 
   return (
     <div className="bg-white w-full p-10 sm:p-20">
-      <h2 className="title-section text-gray-800">
-        Casos <span style={{ color: '#ff7400' }}>de uso</span>
-      </h2>
+      <h1 className="title-section text-gray-800">
+        Casos <span style={{ color: '#ff7400' }}>de sucesso</span>
+      </h1>
       <p className="text-gray-800 p-5 pb-10 sm:p-10 text-xl text-center">
         Os nossos resultados na história de nossos clientes{' '}
       </p>
