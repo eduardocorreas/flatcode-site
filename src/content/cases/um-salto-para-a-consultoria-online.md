@@ -1,6 +1,5 @@
 ---
 path: '/cases/um-salto-para-a-consultoria-online'
-date: '2020-04-04'
 title: 'Um salto para a consultoria online: A trajetória de um'
 wordHighlight: '#PersonalTrainer'
 p1: 'Você sabe até onde pode chegar o seu mercado? Você já pensou em quais são os limites do seu empreendimento? Mesmo que a resposta seja "Sim", gostaria de lhe convidar a refletir sobre o quanto você pode ir longe se souber o poder de uma ferramenta que você tem nas mãos: o celular.'
