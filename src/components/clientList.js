@@ -11,8 +11,8 @@ export default function ClientList() {
             id
             relativePath
             childImageSharp {
-              fluid(maxWidth: 150) {
-                ...GatsbyImageSharpFluid
+              fluid(maxWidth: 500) {
+                ...GatsbyImageSharpFluid_withWebp_tracedSVG
               }
             }
           }
