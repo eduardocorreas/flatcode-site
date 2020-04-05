@@ -1,6 +1,8 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
+import SEO from '../components/seo'
+import Layout from '../components/layout'
 import Header from '../components/header'
 import HeroBlog from '../components/heroBlog'
 import CTA from '../components/cta'
@@ -11,43 +13,46 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   return (
-    <div className=" text-white bg-gray-800">
-      <Header />
-      <HeroBlog
-        title={frontmatter.title}
-        wordHighlight={frontmatter.wordHighlight}
-      />
-      <div>
-        <div className="px-10 sm:px-64 text-xl text-justify">
-          <div dangerouslySetInnerHTML={{ __html: html }} />
-          <p className="mb-5">{frontmatter.p1}</p>
-          <p className="mb-5">{frontmatter.p2}</p>
-          <p className="mb-5">{frontmatter.p3}</p>
-          <p className="mb-5">{frontmatter.p4}</p>
-          <p className="mb-5">{frontmatter.p5}</p>
-          <p className="mb-5">{frontmatter.p6}</p>
-          <p className="mb-5">{frontmatter.p7}</p>
-          <p className="mb-5">{frontmatter.p8}</p>
+    <Layout>
+      <SEO title={frontmatter.title + ' ' + frontmatter.wordHighlight} />
+      <div className=" text-white bg-gray-800">
+        <Header />
+        <HeroBlog
+          title={frontmatter.title}
+          wordHighlight={frontmatter.wordHighlight}
+        />
+        <div>
+          <div className="px-10 sm:px-64 text-xl text-justify">
+            <div dangerouslySetInnerHTML={{ __html: html }} />
+            <p className="mb-5">{frontmatter.p1}</p>
+            <p className="mb-5">{frontmatter.p2}</p>
+            <p className="mb-5">{frontmatter.p3}</p>
+            <p className="mb-5">{frontmatter.p4}</p>
+            <p className="mb-5">{frontmatter.p5}</p>
+            <p className="mb-5">{frontmatter.p6}</p>
+            <p className="mb-5">{frontmatter.p7}</p>
+            <p className="mb-5">{frontmatter.p8}</p>
+          </div>
         </div>
+        <div className="mb-10">
+          <CTA />
+        </div>
+        <div className="text-center mt-10 pb-10">
+          <a
+            href="/"
+            className="bg-green-500 p-3 mb-10  sm:p-5 rounded-full uppercase font-bold"
+          >
+            {' '}
+            Voltar ao site
+          </a>
+        </div>
+        <footer className="text-white p-5 text-center bg-gray-800">
+          © {new Date().getFullYear()}
+          {` `}
+          <a href="https://www.flatcodesm.com">Flatcode</a>
+        </footer>
       </div>
-      <div className="mb-10">
-        <CTA />
-      </div>
-      <div className="text-center mt-10 pb-10">
-        <a
-          href="/"
-          className="bg-green-500 p-3 mb-10  sm:p-5 rounded-full uppercase font-bold"
-        >
-          {' '}
-          Voltar ao site
-        </a>
-      </div>
-      <footer className="text-white p-5 text-center bg-gray-800">
-        © {new Date().getFullYear()}
-        {` `}
-        <a href="https://www.flatcodesm.com">Flatcode</a>
-      </footer>
-    </div>
+    </Layout>
   )
 }
 export const pageQuery = graphql`
