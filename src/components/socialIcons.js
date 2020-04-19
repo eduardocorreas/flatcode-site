@@ -32,7 +32,7 @@ export default function SocialIcons() {
       </a>
 
       <a
-        href="mailto:flatcode23@gmail.com"
+        href="mailto:contato@flatcodelab.com"
         target="_blank"
         rel="noopener noreferrer"
       >
