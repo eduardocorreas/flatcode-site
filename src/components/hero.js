@@ -1,17 +1,8 @@
 import React from 'react'
-import SplitText from 'react-pose-text'
 
 import Particles from 'react-particles-js'
 
 export default function Hero() {
-  const charPoses = {
-    exit: { opacity: 0, y: 10 },
-    enter: {
-      opacity: 1,
-      y: 0,
-      delay: ({ charIndex }) => charIndex * 60,
-    },
-  }
   return (
     <div className="hero">
       <Particles
@@ -26,18 +17,13 @@ export default function Hero() {
       />
       <div className="pt-10 pb-10 px-10 sm:pt-20  sm:px-24">
         <h2 className="text-3xl sm:text-4xl text-white font-bold">
-          Pronto para tornar sua marca
+          Por quanto tempo o seu negócio vai ficar
         </h2>
-        <SplitText
-          initialPose="exit"
-          pose="enter"
-          charPoses={charPoses}
-          className="text-4xl sm:text-10xl text-white text-orange-600 font-bold"
-        >
-          inesquecível?
-        </SplitText>
+        <h2 className="text-3xl sm:text-8xl text-white text-orange-600 font-bold">
+          fora da internet?
+        </h2>
         <h2 className="text-3xl sm:text-4xl text-white font-bold">
-          Comece agora.
+          Entre agora no mundo Digital.
         </h2>
       </div>
       <div className="arrow-down"></div>

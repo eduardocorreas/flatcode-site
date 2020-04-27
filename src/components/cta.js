@@ -6,7 +6,7 @@ export default function CTA() {
   return (
     <div className="text-center sm:pl-48 sm:pr-48 sm:pb-32">
       <p className="text-white p-10 text-xl">
-        E aí, como podemos ajudar a sua empresa?{' '}
+        Entre em contato conosco e peça um orçamento!{' '}
       </p>
       <br />
       <div className="mb-10 sm:mb-0">
