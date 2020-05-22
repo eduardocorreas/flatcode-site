@@ -10,7 +10,7 @@ import Contact from '../components/contact'
 
 const ConteudoGratuito = () => (
   <Layout>
-    <SEO title="Conteúdo Gratuito" />
+    <SEO title="Conteúdo Gratuito - Marketing, Venda e Empreendedorismo" />
     <Hero title="Cadastre-se e fique por dentro de todos os nossos conteúdos gratuitamente" />
     <UseCases />
     <Clients />
