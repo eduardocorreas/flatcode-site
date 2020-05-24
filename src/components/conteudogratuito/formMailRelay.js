@@ -1,8 +1,16 @@
 import React from 'react'
+import { pulse } from 'react-animations'
+import Radium, { StyleRoot } from 'radium'
 
 // import { Container } from './styles';
 
 export default function FormMailRelay() {
+  const styles = {
+    bounce: {
+      animation: 'infinite x 1s',
+      animationName: Radium.keyframes(pulse, 'pulse'),
+    },
+  }
   return (
     <form
       className="simple_form form form-vertical"
@@ -63,13 +71,16 @@ export default function FormMailRelay() {
         autocomplete="off"
       />
       <div className="submit-wrapper">
-        <input
-          type="submit"
-          name="commit"
-          value="CADASTRAR AGORA"
-          className="shadow bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded w-full"
-          data-disable-with="Processando"
-        />
+        <StyleRoot>
+          <input
+            type="submit"
+            name="commit"
+            value="CADASTRAR AGORA"
+            className="shadow bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded w-full"
+            data-disable-with="Processando"
+            style={styles.bounce}
+          />
+        </StyleRoot>
       </div>
     </form>
   )

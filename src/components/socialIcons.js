@@ -1,11 +1,7 @@
 import React from 'react'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faInstagram,
-  faWhatsapp,
-  faYoutube,
-} from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 config.autoAddCss = false
