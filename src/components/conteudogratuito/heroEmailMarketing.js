@@ -1,5 +1,6 @@
 import React from 'react'
 import FormEmailMarketing from './formEmailMarketing'
+import SocialIcons from '../socialIcons'
 
 export default function HeroEmailMarketing({ title }) {
   return (
@@ -8,6 +9,7 @@ export default function HeroEmailMarketing({ title }) {
         <h1 className="text-xl text-center sm:text-4xl text-white ">{title}</h1>
         <br />
         <FormEmailMarketing />
+        <SocialIcons />
       </div>
     </div>
   )

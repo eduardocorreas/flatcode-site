@@ -4,13 +4,10 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Hero from '../components/conteudogratuito/heroEmailMarketing'
 
-import Contact from '../components/contact'
-
 const ConteudoGratuito = () => (
   <Layout>
     <SEO title="Conteúdo Gratuito - Marketing e Empreendedorismo" />
-    <Hero title="Cadastre-se e fique por dentro de todos os nossos conteúdos gratuitamente" />
-    <Contact />
+    <Hero title="Participe da minha Lista de E-mails onde envio conteúdos extremamente exclusivos para te ajudar a alavancar seu negócio!" />
   </Layout>
 )
 

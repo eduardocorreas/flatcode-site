@@ -1,16 +1,8 @@
 import React from 'react'
-import { pulse } from 'react-animations'
-import Radium, { StyleRoot } from 'radium'
 
 // import { Container } from './styles';
 
 export default function FormEmailMarketing() {
-  const styles = {
-    bounce: {
-      animation: 'infinite x 1s',
-      animationName: Radium.keyframes(pulse, 'pulse'),
-    },
-  }
   return (
     <form
       className="simple_form form form-vertical"
@@ -24,7 +16,7 @@ export default function FormEmailMarketing() {
 
       <div className="form-group string optional subscriber_name">
         <input
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-3 mt-5"
+          className="shadow appearance-none border rounded w-full py-4 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-3 mt-5"
           type="text"
           name="FNAME"
           id="mce-FNAME"
@@ -34,7 +26,7 @@ export default function FormEmailMarketing() {
       </div>
       <div className="form-group email required subscriber_email">
         <input
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-3"
+          className="shadow appearance-none border rounded w-full py-4 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-3"
           type="email"
           name="EMAIL"
           id="mce-EMAIL"
@@ -43,17 +35,18 @@ export default function FormEmailMarketing() {
         />
       </div>
       <div className="submit-wrapper">
-        <StyleRoot>
-          <input
-            type="submit"
-            name="commit"
-            value="CADASTRAR AGORA"
-            className="shadow bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded w-full"
-            id="mc-embedded-subscribe"
-            style={styles.bounce}
-          />
-        </StyleRoot>
+        <input
+          type="submit"
+          name="commit"
+          value="CADASTRAR AGORA"
+          className="font-bold text-white rounded py-4 px-8 shadow-lg uppercase tracking-wider w-full bg-orange-500 hover:bg-orange-400 cursor-pointer"
+          id="mc-embedded-subscribe"
+        />
       </div>
+
+      <p className="text-white text-center p-5">
+        Valorizamos sua privacidade e nunca te enviaremos spam!
+      </p>
     </form>
   )
 }
